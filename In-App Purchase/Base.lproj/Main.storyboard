@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X5c-XW-6od"/>
+                        <viewControllerLayoutGuide type="bottom" id="FUB-wv-gcY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyM-TW-2gV">
+                                <rect key="frame" x="16" y="73" width="343" height="58"/>
+                                <color key="backgroundColor" red="0.5729944566233891" green="0.84646652918781728" blue="0.47271127735317559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Iqr-dw-IPE"/>
+                                </constraints>
+                                <state key="normal" title="10钻石/6¥">
+                                    <color key="titleColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AIm-Fw-MGh"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H3H-wW-MVS">
+                                <rect key="frame" x="0.0" y="158" width="375" height="509"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H3H-wW-MVS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HJr-0w-1GL"/>
+                            <constraint firstAttribute="bottom" secondItem="H3H-wW-MVS" secondAttribute="bottom" id="HK6-aK-aT8"/>
+                            <constraint firstAttribute="trailing" secondItem="NyM-TW-2gV" secondAttribute="trailing" constant="16" id="LhE-M4-YXe"/>
+                            <constraint firstItem="NyM-TW-2gV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="hgq-Lk-fua"/>
+                            <constraint firstItem="NyM-TW-2gV" firstAttribute="top" secondItem="X5c-XW-6od" secondAttribute="bottom" constant="53" id="sQ3-U6-ved"/>
+                            <constraint firstAttribute="trailing" secondItem="H3H-wW-MVS" secondAttribute="trailing" id="toc-6m-YZc"/>
+                            <constraint firstItem="H3H-wW-MVS" firstAttribute="top" secondItem="NyM-TW-2gV" secondAttribute="bottom" constant="27" id="wWl-4e-T4T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="H3H-wW-MVS" id="hTS-RK-KhR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
