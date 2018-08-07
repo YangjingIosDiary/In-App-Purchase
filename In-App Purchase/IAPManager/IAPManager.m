@@ -172,7 +172,7 @@
      */
     NSError *error;
     NSDictionary *requestContents = @{@"receipt-data":transactionReceiptString};
-    NSData *requestData = [NSJSONSerialization dataWithJSONObject:requestContents options:0 error:&error];
+    NSData *requestData = [NSJSONSerialization dataWithJSONObject:requestContents options:NSJSONWritingPrettyPrinted error:&error];
     NSString *serverString = @"https://buy.itunes.apple.com/verifyReceipt";
     if (sandBox) {
         serverString = @"https://sandbox.itunes.apple.com/verifyReceipt";

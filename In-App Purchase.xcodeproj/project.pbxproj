@@ -17,6 +17,7 @@
 		395A9B65210EB19300552876 /* In_App_PurchaseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395A9B64210EB19300552876 /* In_App_PurchaseUITests.m */; };
 		395A9B75210ED9FD00552876 /* IAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 395A9B74210ED9FD00552876 /* IAPManager.m */; };
 		39AE9DE921115ED8001A6453 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AE9DE821115ED8001A6453 /* StoreKit.framework */; };
+		39AE9DEC21118B2B001A6453 /* ProductListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AE9DEB21118B2B001A6453 /* ProductListController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		395A9B73210ED9FD00552876 /* IAPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAPManager.h; sourceTree = "<group>"; };
 		395A9B74210ED9FD00552876 /* IAPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAPManager.m; sourceTree = "<group>"; };
 		39AE9DE821115ED8001A6453 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		39AE9DEA21118B2B001A6453 /* ProductListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListController.h; sourceTree = "<group>"; };
+		39AE9DEB21118B2B001A6453 /* ProductListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				395A9B72210ED9ED00552876 /* IAPManager */,
 				395A9B40210EB19100552876 /* AppDelegate.h */,
 				395A9B41210EB19100552876 /* AppDelegate.m */,
+				39AE9DEA21118B2B001A6453 /* ProductListController.h */,
+				39AE9DEB21118B2B001A6453 /* ProductListController.m */,
 				395A9B43210EB19100552876 /* ViewController.h */,
 				395A9B44210EB19100552876 /* ViewController.m */,
 				395A9B46210EB19100552876 /* Main.storyboard */,
@@ -294,6 +299,7 @@
 			files = (
 				395A9B75210ED9FD00552876 /* IAPManager.m in Sources */,
 				395A9B45210EB19100552876 /* ViewController.m in Sources */,
+				39AE9DEC21118B2B001A6453 /* ProductListController.m in Sources */,
 				395A9B50210EB19300552876 /* main.m in Sources */,
 				395A9B42210EB19100552876 /* AppDelegate.m in Sources */,
 			);

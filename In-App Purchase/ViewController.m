@@ -30,7 +30,7 @@
 - (IBAction)confirmAction:(id)sender {
     self.textView.text = @"交易详情：";
     
-    [[IAPManager manager] getProductInfo:@"product001"];
+    [[IAPManager manager] getProductInfo:@"ios9"];
 
 }
 
