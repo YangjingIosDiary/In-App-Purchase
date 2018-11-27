@@ -44,6 +44,7 @@
     self.delegate = nil;
 }
 
+//获取商品信息
 - (void)getProductInfo:(NSString *)productIndentifier {
     if (![SKPaymentQueue canMakePayments]) {
         [self log:@"不允许使用In-App Purchase"];
@@ -85,6 +86,7 @@
     
     [self log:@"获取商品信息成功，发起交易"];
     
+    //发起交易
     SKPayment *payment = [SKPayment paymentWithProduct:products[0]];
     [[SKPaymentQueue defaultQueue] addPayment:payment];
 }
@@ -104,6 +106,7 @@
 }
 
 //MARK: - SKPaymentTransactionObserver
+//交易结果
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions {
     for (SKPaymentTransaction *transaction in transactions) {
         switch (transaction.transactionState) {
