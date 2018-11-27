@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 #import "IAPManager.h"
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
 @interface ViewController () <IAPManagerDelegate>
 
@@ -21,19 +19,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.textView.text = @"交易详情：";
 
-    [IAPManager manager].delegate = self;
+    self.textView.text = @"交易详情：";
 }
 
-- (IBAction)confirmAction:(id)sender {
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [[IAPManager manager] addIAPObserver:self];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [[IAPManager manager] removeIAPObserver];
+}
+
+//MARK: - private methods
+- (IBAction)expendAction:(id)sender {
     self.textView.text = @"交易详情：";
     
-    [[IAPManager manager] getProductInfo:@"ios9"];
+    [[IAPManager manager] getProductInfo:@"YJIAP0001"];
 
 }
 
+- (IBAction)unexpendAction:(id)sender {
+    self.textView.text = @"交易详情：";
+    
+    [[IAPManager manager] getProductInfo:@"YJIAP0002"];
+}
+
+//MARK: - IAPManagerDelegate
 - (void)IAPManager:(id)manager logInfo:(NSString *)logInfo {
     dispatch_async(dispatch_get_main_queue(), ^{
         NSString *text = self.textView.text;

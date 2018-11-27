@@ -16,8 +16,7 @@
 		395A9B5A210EB19300552876 /* In_App_PurchaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395A9B59210EB19300552876 /* In_App_PurchaseTests.m */; };
 		395A9B65210EB19300552876 /* In_App_PurchaseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395A9B64210EB19300552876 /* In_App_PurchaseUITests.m */; };
 		395A9B75210ED9FD00552876 /* IAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 395A9B74210ED9FD00552876 /* IAPManager.m */; };
-		39AE9DE921115ED8001A6453 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AE9DE821115ED8001A6453 /* StoreKit.framework */; };
-		39AE9DEC21118B2B001A6453 /* ProductListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AE9DEB21118B2B001A6453 /* ProductListController.m */; };
+		39BD6DD421AD2ACF0028AA3B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BD6DD321AD2ACF0028AA3B /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +55,7 @@
 		395A9B66210EB19300552876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		395A9B73210ED9FD00552876 /* IAPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAPManager.h; sourceTree = "<group>"; };
 		395A9B74210ED9FD00552876 /* IAPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAPManager.m; sourceTree = "<group>"; };
-		39AE9DE821115ED8001A6453 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		39AE9DEA21118B2B001A6453 /* ProductListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListController.h; sourceTree = "<group>"; };
-		39AE9DEB21118B2B001A6453 /* ProductListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListController.m; sourceTree = "<group>"; };
+		39BD6DD321AD2ACF0028AA3B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39AE9DE921115ED8001A6453 /* StoreKit.framework in Frameworks */,
+				39BD6DD421AD2ACF0028AA3B /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +111,6 @@
 				395A9B72210ED9ED00552876 /* IAPManager */,
 				395A9B40210EB19100552876 /* AppDelegate.h */,
 				395A9B41210EB19100552876 /* AppDelegate.m */,
-				39AE9DEA21118B2B001A6453 /* ProductListController.h */,
-				39AE9DEB21118B2B001A6453 /* ProductListController.m */,
 				395A9B43210EB19100552876 /* ViewController.h */,
 				395A9B44210EB19100552876 /* ViewController.m */,
 				395A9B46210EB19100552876 /* Main.storyboard */,
@@ -157,7 +152,7 @@
 		39AE9DE721115ED8001A6453 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				39AE9DE821115ED8001A6453 /* StoreKit.framework */,
+				39BD6DD321AD2ACF0028AA3B /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -299,7 +294,6 @@
 			files = (
 				395A9B75210ED9FD00552876 /* IAPManager.m in Sources */,
 				395A9B45210EB19100552876 /* ViewController.m in Sources */,
-				39AE9DEC21118B2B001A6453 /* ProductListController.m in Sources */,
 				395A9B50210EB19300552876 /* main.m in Sources */,
 				395A9B42210EB19100552876 /* AppDelegate.m in Sources */,
 			);
@@ -471,16 +465,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 475L2MZD72;
+				DEVELOPMENT_TEAM = U7S6VUPM23;
 				INFOPLIST_FILE = "In-App Purchase/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.info.wordoor;
+				PRODUCT_BUNDLE_IDENTIFIER = "yangjing.In-App-Purchase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -489,16 +483,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 475L2MZD72;
+				DEVELOPMENT_TEAM = U7S6VUPM23;
 				INFOPLIST_FILE = "In-App Purchase/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.info.wordoor;
+				PRODUCT_BUNDLE_IDENTIFIER = "yangjing.In-App-Purchase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

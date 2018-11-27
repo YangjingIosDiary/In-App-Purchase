@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,30 +27,44 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="Iqr-dw-IPE"/>
                                 </constraints>
-                                <state key="normal" title="10钻石/6¥">
+                                <state key="normal" title="10钻石/6¥（消耗型）">
                                     <color key="titleColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="confirmAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AIm-Fw-MGh"/>
+                                    <action selector="expendAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bx1-Dv-2bb"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H3H-wW-MVS">
-                                <rect key="frame" x="0.0" y="158" width="375" height="509"/>
+                                <rect key="frame" x="0.0" y="232" width="375" height="435"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDe-QB-60Z">
+                                <rect key="frame" x="16" y="151" width="343" height="58"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.4941176471" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="VIP/88¥（非消耗型）">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="unexpendAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgr-8L-lIT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="kDe-QB-60Z" firstAttribute="width" secondItem="NyM-TW-2gV" secondAttribute="width" id="At6-d0-EdU"/>
+                            <constraint firstItem="kDe-QB-60Z" firstAttribute="height" secondItem="NyM-TW-2gV" secondAttribute="height" id="GUm-n3-lDc"/>
                             <constraint firstItem="H3H-wW-MVS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HJr-0w-1GL"/>
                             <constraint firstAttribute="bottom" secondItem="H3H-wW-MVS" secondAttribute="bottom" id="HK6-aK-aT8"/>
                             <constraint firstAttribute="trailing" secondItem="NyM-TW-2gV" secondAttribute="trailing" constant="16" id="LhE-M4-YXe"/>
+                            <constraint firstItem="kDe-QB-60Z" firstAttribute="top" secondItem="NyM-TW-2gV" secondAttribute="bottom" constant="20" id="PRu-qF-D33"/>
+                            <constraint firstItem="kDe-QB-60Z" firstAttribute="centerX" secondItem="NyM-TW-2gV" secondAttribute="centerX" id="dC0-J6-YBd"/>
                             <constraint firstItem="NyM-TW-2gV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="hgq-Lk-fua"/>
+                            <constraint firstItem="H3H-wW-MVS" firstAttribute="top" secondItem="kDe-QB-60Z" secondAttribute="bottom" constant="23" id="qiu-cq-qN3"/>
                             <constraint firstItem="NyM-TW-2gV" firstAttribute="top" secondItem="X5c-XW-6od" secondAttribute="bottom" constant="53" id="sQ3-U6-ved"/>
                             <constraint firstAttribute="trailing" secondItem="H3H-wW-MVS" secondAttribute="trailing" id="toc-6m-YZc"/>
-                            <constraint firstItem="H3H-wW-MVS" firstAttribute="top" secondItem="NyM-TW-2gV" secondAttribute="bottom" constant="27" id="wWl-4e-T4T"/>
                         </constraints>
                     </view>
                     <connections>

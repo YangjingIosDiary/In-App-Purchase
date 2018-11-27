@@ -33,7 +33,7 @@
 /**
  *  添加IAP观察者
  */
-- (void)addIAPObserver;
+- (void)addIAPObserver:(id <IAPManagerDelegate>)observer;
 
 /**
  *  移除IAP观察者
