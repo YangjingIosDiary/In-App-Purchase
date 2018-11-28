@@ -1,2 +1,1 @@
-# In-App-Purchase
-苹果内购
+# In-App-Purchase - 苹果内购
